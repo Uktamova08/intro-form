@@ -70,6 +70,8 @@ body {
 
 .hero {
     display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .inner {
@@ -118,7 +120,7 @@ body {
 .main-content {
 
     padding-left: 60px;
- 
+
 }
 
 .main-text {
@@ -192,9 +194,11 @@ b {
     padding-top: 79px;
     padding-bottom: 63px;
 }
-.form-inner{
+
+.form-inner {
     padding-bottom: 43px;
 }
+
 .wrapper {
     position: relative;
     margin-bottom: 35px;
@@ -203,17 +207,26 @@ b {
 .input {
     padding-bottom: 14px;
     border: 0;
-    color: #555;
+    color: #000;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
 }
 
 .input:not(:last-child) {
     width: 450px;
     border-bottom: 1px solid #555;
+}
+
+.input::placeholder {
+    color: #555;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .input-text {
@@ -238,7 +251,7 @@ b {
     border-color: red;
 }
 
-.input:not(:focus):not(:placeholder-shown):invalid ~ .input-text {
+.input:not(:focus):not(:placeholder-shown):invalid~.input-text {
     display: block;
 }
 
