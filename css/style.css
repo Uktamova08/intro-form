@@ -63,16 +63,12 @@ body {
     margin-right: auto;
 }
 
-img {
-    min-width: 100%;
-    height: auto;
-}
-
 .main {
     flex-grow: 1;
 }
 
-.wrapper {
+
+.hero {
     display: flex;
 }
 
@@ -108,6 +104,7 @@ img {
 }
 
 .main-heading {
+    text-decoration: none;
     margin-top: 0;
     margin-bottom: 25px;
     color: #FFF;
@@ -119,12 +116,14 @@ img {
 }
 
 .main-content {
+
     padding-left: 60px;
-    padding-bottom: 220px;
+ 
 }
 
 .main-text {
     margin-top: 0;
+    padding-top: 25px;
     width: 347px;
     color: #FFF;
     font-family: Inter;
@@ -137,7 +136,7 @@ img {
 
 .footer-content {
     display: flex;
-
+    padding-top: 195px;
 }
 
 b {
@@ -151,6 +150,7 @@ b {
 }
 
 .footer-text {
+    text-decoration: none;
     margin-top: 0;
     border-radius: 0px 0px 20px 20px;
     background: #4DC490;
@@ -166,88 +166,98 @@ b {
     padding-right: 145px;
 }
 
-.contact-page {
-    border: 1px solid #000;
-    padding-top: 55px;
-    padding-left: 60px;
-    padding-right: 60px;
+.form-wrapper {
+    width: 570px;
+    height: 650px;
     border-radius: 20px;
     background: #FFF;
+    padding-top: 55px;
+    padding-bottom: 40px;
+    padding-left: 60px;
 }
 
-.h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+.form-heading {
     width: 428px;
+    text-decoration: none;
     color: #000;
     font-family: Inter;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
     line-height: 42px;
-    padding-bottom: 69px;
+
 }
 
-.input-wrapper {
-    border: 0;
-    display: flex;
-    flex-direction: column;
+.form {
+    padding-top: 79px;
     padding-bottom: 63px;
+}
+.form-inner{
+    padding-bottom: 43px;
+}
+.wrapper {
+    position: relative;
+    margin-bottom: 35px;
 }
 
 .input {
+    padding-bottom: 14px;
+    border: 0;
     color: #555;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    border: 0;
-    padding-bottom: 14px;
 }
 
-.contact-page-button {
+.input:not(:last-child) {
+    width: 450px;
+    border-bottom: 1px solid #555;
+}
+
+.input-text {
+    left: 300px;
+    top: 24px;
+    display: none;
+    position: absolute;
+    color: #F03535;
+    text-align: right;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input:not(:focus):not(:placeholder-shown):valid {
+    border-color: green;
+}
+
+.input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+.input:not(:focus):not(:placeholder-shown):invalid ~ .input-text {
+    display: block;
+}
+
+
+.button {
     cursor: pointer;
+    border: 0;
     color: #FFF;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    border: 0;
-    padding: 20px;
-    padding-left: 149px;
-    padding-right: 149px;
     border-radius: 10px;
-    margin-bottom: 8px;
     background: #655AF2;
+    padding: 20px 149px;
 }
 
-.contact-line {
-    margin-top: 0;
-    width: 450px;
-    border-bottom: 1px solid #555;
-}
-
-.contact-line:not(:last-child) {
-    margin-bottom: 35px;
-}
-
-.contact-page-text {
-    width: 347px;
-    margin: 0;
-   margin-right: auto;
-   margin-left: auto;
-    color: #555;
-    font-family: Inter;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 15px;
-}
-
-.b2 {
-
+.form-span {
     color: #F03535;
     font-family: Inter;
     font-size: 11px;
@@ -255,4 +265,18 @@ b {
     font-weight: 500;
     line-height: 15px;
     text-decoration-line: underline;
+}
+
+.span {
+    padding-top: 8px;
+    padding-left: 60px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    color: #555;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
 }

@@ -14,45 +14,55 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
+
 <body>
-    <div class="wrapper container">
+    <div class="hero container">
         <div class="inner">
-
             <div class="header-content"><button class="header-button">frontend and backend</button></div>
-
-
             <div class="main-content ">
-                <h2 class="main-heading">Learn to program by <br> watching <br> professionals</h2>
+                <a href="#" class="main-heading">Learn to program by <br> watching <br> professionals</a>
                 <p class="main-text">See how experienced developers solve problems in real time</p>
             </div>
-
-
             <div class="footer-content">
-                <p class="footer-text"><b>Try it free 7 days,</b> then $20/mo</p>
+                <a href="#" class="footer-text"><b>Try it free 7 days,</b> then $20/mo</a>
             </div>
-
         </div>
 
-        <section class="contact-page">
-            <h2 class="h2">Sign up for the course and get free 7 days</h2>
-            <div class="input-wrapper">
-                <input class="input" type="text" name="name" placeholder="name">
-                <hr class="contact-line">
-                <input class="input" type="text" name="last-name" placeholder="Last Name">
-                <hr class="contact-line">
-                <input class="input" type="email" name="email" placeholder="Email Address">
-                <hr class="contact-line ">
-                <input class="input" type="password" name="password" placeholder="Password">
-                <hr class="contact-line">
+        <div class="form-wrapper">
+            <div class="">
+                <a class="form-heading" href="#">Sign up for the course and <br> get free 7 days</a>
+                <form class="form">
+                    <div class="form-inner">
+                        <div class="wrapper">
+                            <input class="input" type="text" placeholder="Name" required>
+                            <span class="input-text">First Name cannot be empty</span>
+                        </div>
+                        <div class="wrapper">
+                            <input class="input" type="text" placeholder="Last Name" required>
+                            <span class="input-text">Last Name cannot be empty</span>
+                        </div>
+                        <div class="wrapper">
+                            <input class="input" type="email" placeholder="Email Address"  pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+                            <span class="input-text">Looks like this is not an email</span>
+                        </div>
+                        <div class="wrapper">
+                            <input class="input" type="password" placeholder="Password" required>
+                            <span class="input-text">Password cannot be empty</span>
+                        </div>
+                    </div>
+                    <div class="form-bottom">
+                        <button class="button" type="submit">Claim your free trial</button >
+                        <span class="span">By clicking the button, you are agreeing to our<span class=" form-span"> Terms and Services</span></span>
+                    </div>
+                </form>
             </div>
-            <button class="contact-page-button" type="button">Claim your free trial</button>
-            <p class="contact-page-text">By clicking the button, you are agreeing to our <b class="b2">Terms and
-                    Services</b></p>
-        </section>
+            
+        </div>
     </div>
     <script src="js/main.js"></script>
-
 </body>
 
+</html>
 
 </html>
